@@ -1,0 +1,35 @@
+/**全局样式表**/
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.el-breadcrumb {
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+.el-card {
+  box-shadow: 0 1px 1px rgb(241, 227, 227) !important;
+  height: 99.5%;
+}
+.el-table {
+  margin-top: 15px;
+}
+.el-pagination {
+  margin-top: 10px;
+  text-align: right;
+}
+.toolBox {
+  text-align: left;
+  width: 100%;
+}
+.el-drawer__header {
+  text-align: left !important;
+  border-bottom: 1px solid #cccccc;
+  padding: 15px !important;
+}
+.el-drawer__body {
+  padding: 10px !important;
+}

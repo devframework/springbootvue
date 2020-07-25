@@ -1,0 +1,62 @@
+{
+  "name": "Activiti",
+  "uri": "http://activiti.org/bpmn",
+  "prefix": "activiti",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "Process",
+      "isAbstract": true,
+      "extends": ["bpmn:Process"],
+      "properties": [
+        {
+          "name": "candidateStarterGroups",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "candidateStarterUsers",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "versionTag",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "historyTimeToLive",
+          "isAttr": true,
+          "type": "String"
+        },
+        {
+          "name": "isStartableInTasklist",
+          "isAttr": true,
+          "type": "Boolean",
+          "default": true
+        },
+        {
+          "name": "executionListener",
+          "isAbstract": true,
+          "type": "Expression"
+        }
+      ]
+    },
+    {
+      "name": "UserTask",
+      "isAbstract": true,
+      "extends": ["bpmn:UserTask"],
+      "properties": [
+        {
+          "name": "nodeType",
+          "isAttr": true,
+          "type": "String"
+        }
+      ]
+    }
+  ],
+  "emumerations": []
+}
